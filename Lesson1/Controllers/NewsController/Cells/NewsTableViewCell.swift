@@ -38,13 +38,10 @@ class NewsTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configureWithNews(news: News) {
         titleNewsLabel.text = news.newsTtitle
-      //  titleNewsLabel.textColor = UIColor.systemBlue
         imageNews.image = news.newsImage
         saveNews = news
     }
